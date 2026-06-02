@@ -1386,12 +1386,24 @@ ul { list-style: none; }
   }
 
   .hero {
-    min-height: 520px;
-    height: 70vh;
+    min-height: 420px;
+    height: 58vh;
   }
 
   .hero-content {
-    padding: calc(60px + 48px) 20px 80px;
+    padding: 84px 20px 30px;
+  }
+
+  .hero-title {
+    margin-bottom: 16px;
+  }
+
+  .hero-subtitle {
+    margin-bottom: 20px;
+  }
+
+  .hero-actions {
+    margin-bottom: 28px;
   }
 
   .hero-stats {
