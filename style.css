@@ -328,7 +328,7 @@ ul { list-style: none; }
    ================================================ */
 .hero {
   position: relative;
-  min-height: 100vh;
+  min-height: 70vh;
   display: flex;
   align-items: center;
   overflow: hidden;
@@ -1388,8 +1388,8 @@ ul { list-style: none; }
   }
 
   .hero {
-    min-height: 420px;
-    height: 58vh;
+    min-height: auto;
+    height: auto;
   }
 
   .hero-content {
