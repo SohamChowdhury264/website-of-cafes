@@ -552,9 +552,9 @@ ul { list-style: none; }
   position: relative;
   border-radius: var(--radius-lg);
   overflow: hidden;
-  aspect-ratio: 1376 / 3058;
-  max-height: 700px;
+  aspect-ratio: 4/5;
   background: var(--color-bg-card);
+  min-height: 400px;
 }
 
 .about-img-wrapper img {
