@@ -1385,6 +1385,11 @@ ul { list-style: none; }
     right: 10px;
   }
 
+  .hero {
+    min-height: 520px;
+    height: 70vh;
+  }
+
   .hero-content {
     padding: calc(60px + 48px) 20px 80px;
   }
