@@ -325,8 +325,17 @@ window.addEventListener('load', () => {
     ].filter(Boolean).join('\n');
 
     const waNumber = '918902727154';
-    const waUrl = `https://wa.me/${waNumber}?text=${encodeURIComponent(msg)}`;
+    const waUrl = `https://api.whatsapp.com/send?phone=${waNumber}&text=${encodeURIComponent(msg)}`;
     window.open(waUrl, '_blank');
+
+    // Reset form after a brief delay so fields are clean when the user returns
+    setTimeout(() => {
+      form.reset();
+      const tags = document.querySelectorAll('.bf-tag');
+      tags.forEach(t => t.classList.remove('active'));
+      const hiddenInput = document.getElementById('bf-occasion');
+      if (hiddenInput) hiddenInput.value = '';
+    }, 1000);
   });
 })();
 
